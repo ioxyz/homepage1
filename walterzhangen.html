@@ -1,0 +1,144 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>Walter Zhang</title>
+    <meta name="author" content="Walter Zhang">
+    <link rel="icon" href="favicon.ico">
+    
+    <!-- Disable Baidu transformation -->
+    <meta http-equiv="Cache-Control" content="no-transform " />
+    <meta http-equiv="Cache-Control" content="no-siteapp" /> 
+
+
+    <!-- Disable Baidu snapshot -->
+    <meta name="Baiduspider" content="noarchive">
+
+  
+
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="cover2.css" rel="stylesheet">
+    <!--fontawesome icon css-->
+     <link href="./ft/css/font-awesome.min.css" rel="stylesheet">
+     <!-- Music Player-->
+     <link rel="stylesheet" href="./music/build/smusic.min.css">
+  </head>
+
+  <body class="text-center">
+
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+        <div class="inner">
+       <!--   <h3 class="masthead-brand">Cover</h3> -->
+          <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link" href="en.html">Home</a>
+            <a class="nav-link active" href="#">about</a>
+            <a class="nav-link" href="index.html">中文</a>
+          </nav>
+        </div>
+      </header>
+<br/>
+      <main role="main" class="inner cover">
+      <h1  class="cover-heading">About Walter</h1><br/>
+     <div class="accordion" id="accordionExample">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+         Basic Information
+        </button>
+      </h5>
+    </div>
+
+    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body">
+        <font color="#333">
+       <p>Born in 1998</p>
+       <p>Location: Nanjing, China</p>
+
+        </font>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          My Hobbies
+        </button>
+      </h5>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      <div class="card-body">
+        <font color="#333">
+        
+        </font>      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Contact Me
+        </button>
+      </h5>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+      <div class="card-body">
+        <font color="#333">
+        <p class="fa fa-comments-o" aria-hidden="true"> Willing to Know You!</p>
+        </font>      </div>
+    </div>
+  </div>
+</div>
+<br />
+        <h1 class="cover-heading" >诗歌电台</h1>
+<br />
+	<p class="lead">
+      <div id="my-music"></div>
+      </p>
+      </main>
+
+      <footer class="mastfoot mt-auto">
+        <div class="inner">
+        <!--网站运行时间-->
+     
+        <p>
+        <span class="sr-only">
+<center>
+<i class="fa fa-cog fa-spin fa-1x fa-fw"></i>
+<span id="showsectime" ></span>
+
+<script src="./js/vendor/timeen.js"">
+</script>
+</span>
+</p>
+
+          
+        </div>
+      </footer>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write("<script src='./js/vendor/jquery-slim.min.js'>")</script>
+    <script src="./js/vendor/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <!-- Music Player-->
+    <script src="./music/songList.js"></script>
+<script src="./music/build/smusic.min.js"></script>
+<script>
+	var smusic = SMusic(songList, {
+		container : document.getElementById('my-music')
+	});
+	smusic.init()
+</script>
+  </body>
+</html>
